@@ -36,7 +36,7 @@ file(GLOB ffmpeg_shared_libries ${FFMPEG_DEV_ROOT}/bin/*dll)
 file(COPY ${ffmpeg_shared_libries} DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 
 # copy test file
-file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/small_bunny_1080p_60fps.mp4 DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/cuc60anniversary_start.ts ${CMAKE_CURRENT_SOURCE_DIR}/remuxed_small_bunny_1080p_60fps.ts ${CMAKE_CURRENT_SOURCE_DIR}/small_bunny_1080p_60fps.mp4 DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 
 
 # add library
